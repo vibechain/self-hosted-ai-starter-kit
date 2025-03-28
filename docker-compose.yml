@@ -20,6 +20,11 @@ x-n8n: &service-n8n
     - N8N_ENCRYPTION_KEY
     - N8N_USER_MANAGEMENT_JWT_SECRET
     - OLLAMA_HOST=ollama:11434
+    - N8N_HOST=ai.salequick.com
+    - VUE_APP_URL_BASE_API=https://ai.salequick.com/
+    - WEBHOOK_TUNNEL_URL=https://ai.salequick.com/
+    - N8N_COMMUNITY_NODES=n8n-nodes-langchain
+  user: root
 
 x-ollama: &service-ollama
   image: ollama/ollama:latest
